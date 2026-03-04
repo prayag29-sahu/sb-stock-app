@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react'
 import '../styles/Users.css'
-import axios from 'axios'
 import axiosInstance from '../components/axiosInstance'
 
 const Users = () => {
