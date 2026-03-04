@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import '../styles/Portfolio.css'
 import {BiSearch} from 'react-icons/bi'
-import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 import axiosInstance from '../components/axiosInstance';
 

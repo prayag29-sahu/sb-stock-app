@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import React, { useEffect, useState } from "react";
 import "../styles/Profile.css";
 import { RiRefund2Line, RiHistoryLine } from "react-icons/ri";
