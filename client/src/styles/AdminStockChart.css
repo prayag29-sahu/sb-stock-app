@@ -8,3 +8,31 @@
     width: 90%;
     margin-left: 3vw;
 }
+
+/* Tablet */
+@media (max-width: 1024px) {
+    .adminStockPage {
+        flex-direction: column;
+        padding-top: 12vh;
+        align-items: center;
+    }
+
+    .adminStockChart {
+        width: 95%;
+        height: 60vh;
+        margin-left: 0;
+    }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    .adminStockPage {
+        padding-top: 15vh;
+    }
+
+    .adminStockChart {
+        width: 100%;
+        height: 45vh;
+        margin-left: 0;
+    }
+}

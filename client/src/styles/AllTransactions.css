@@ -2,13 +2,13 @@
     width: 100%;
     height: 100vh;
     padding-top: 13vh;
-    padding-left: 3vw
+    padding-left: 3vw;
 }
+
 .all-transactions-page h2{
     margin-bottom: 4vh;
     color: rgba(77, 109, 134, 0.934);
 }
-
 
 .all-transactions{
     width: 90%;
@@ -35,7 +35,6 @@
 
 .all-transactions .admin-transaction span{
     text-align: center;
-    
 }
 
 .all-transactions .admin-transaction span h6{
@@ -48,4 +47,59 @@
     margin: 0;
     font-size: 1rem;
     color: #394b9da2;
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+    .all-transactions-page {
+        padding-left: 4vw;
+    }
+
+    .all-transactions {
+        width: 95%;
+    }
+
+    .all-transactions .admin-transaction {
+        flex-wrap: wrap;
+        gap: 12px;
+        padding: 2vh 3vw;
+    }
+
+    .all-transactions .admin-transaction span {
+        min-width: calc(33% - 12px);
+    }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    .all-transactions-page {
+        padding-top: 15vh;
+        padding-left: 4vw;
+        padding-right: 4vw;
+        height: auto;
+    }
+
+    .all-transactions-page h2 {
+        font-size: 1.3rem;
+        margin-bottom: 2vh;
+    }
+
+    .all-transactions {
+        width: 100%;
+        height: 70vh;
+    }
+
+    .all-transactions .admin-transaction {
+        flex-wrap: wrap;
+        gap: 10px;
+        padding: 2vh 4vw;
+    }
+
+    .all-transactions .admin-transaction span {
+        min-width: calc(50% - 10px);
+    }
+
+    .all-transactions .admin-transaction span p {
+        font-size: 0.9rem;
+    }
 }

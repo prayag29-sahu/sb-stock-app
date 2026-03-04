@@ -1,15 +1,14 @@
 .profilePage{
-
     width: 100%;
     padding-top: 12vh;
 }
+
 .profilePage h2{
     margin: 4vh 5vw;
     color: #323d6fec;
 }
 
 .profileBox{
-
     width: 80%;
     background-color: #F4F6FB;
     margin-left: 10%;
@@ -18,7 +17,6 @@
 }
 
 .profileBox-body{
-
     display: flex;
     align-items: center;
     background-color: rgb(255, 255, 255);
@@ -28,12 +26,11 @@
 }
 
 .profileBox-body span{
-
     margin: 0;
     text-align: center;
 }
-.profileBox-body span p{
 
+.profileBox-body span p{
     margin: 0;
     font-size: 0.8rem;
     color: #1c1c1dad;
@@ -44,15 +41,13 @@
     margin: 0;
     font-weight: 400;
 }
-.profileBox-body .cash-actions{
 
+.profileBox-body .cash-actions{
     display: flex;
     gap: 10px;
-
 }
 
 .profileBox-body .cash-actions .cash-actions-active{
-
     background-color: #3F5BD9;
     color: #fff;
     padding: 10px 20px;
@@ -62,9 +57,7 @@
     font-weight: 500;
 }
 
-
 .profileBox-body .cash-actions .cash-actions-inactive{
-
     padding: 10px 20px;
     font-size: 0.8rem;
     background-color: #fff;
@@ -74,11 +67,9 @@
     font-weight: 500;
 }
 
-
 .profileBox-body .cash-actions button .cash-action-icons{
     font-size: 1rem;
 }
-
 
 .ProfileFunds{
     margin-left: 10%;
@@ -86,16 +77,13 @@
 }
 
 .ProfileFunds h3{
-
     font-size: 1.5rem;
     color: #2f3c76;
-
 }
 
 .ProfileFunds form{
     width: 30%;
 }
-
 
 .ProfileFunds input, .ProfileFunds select{
     margin-left: 1.3rem;
@@ -103,7 +91,6 @@
 
 .ProfileFunds button{
     margin-left: 1.3rem;
-
 }
 
 .profileTransactions{
@@ -113,12 +100,12 @@
     flex-direction: column;
     gap: 10px;
     overflow-y: scroll;
-    -ms-overflow-style: none; 
-    scrollbar-width: none; 
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 }
 .profileTransactions::-webkit-scrollbar {
     display: none;
-  }
+}
 
 .profileTransaction{
     display: flex;
@@ -132,7 +119,6 @@
 
 .profileTransaction span{
     text-align: center;
-    
 }
 
 .profileTransaction span h6{
@@ -145,4 +131,107 @@
     margin: 0;
     font-size: 1.1rem;
     color: #394b9d;
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+    .profileBox {
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    .profileBox-body {
+        flex-wrap: wrap;
+        gap: 14px;
+        padding: 2vh 2vw;
+    }
+
+    .profileBox-body span h6 {
+        font-size: 1.3rem;
+    }
+
+    .ProfileFunds {
+        margin-left: 5%;
+    }
+
+    .ProfileFunds form {
+        width: 50%;
+    }
+
+    .profileTransactions {
+        width: 80%;
+    }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    .profilePage {
+        padding-top: 15vh;
+    }
+
+    .profilePage h2 {
+        font-size: 1.4rem;
+        margin: 2vh 5vw;
+    }
+
+    .profileBox {
+        width: 92%;
+        margin-left: 4%;
+        padding: 2vh 4vw;
+    }
+
+    .profileBox-body {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+        padding: 2vh 4vw;
+    }
+
+    .profileBox-body span h6 {
+        font-size: 1.2rem;
+    }
+
+    .profileBox-body .cash-actions {
+        width: 100%;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+
+    .profileBox-body .cash-actions .cash-actions-active,
+    .profileBox-body .cash-actions .cash-actions-inactive {
+        padding: 8px 14px;
+        font-size: 0.75rem;
+    }
+
+    .ProfileFunds {
+        margin-left: 4%;
+        margin-right: 4%;
+    }
+
+    .ProfileFunds form {
+        width: 90%;
+    }
+
+    .ProfileFunds input,
+    .ProfileFunds select,
+    .ProfileFunds button {
+        margin-left: 0;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .profileTransactions {
+        width: 100%;
+        height: 32vh;
+    }
+
+    .profileTransaction {
+        padding: 10px 16px;
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    .profileTransaction span p {
+        font-size: 0.95rem;
+    }
 }

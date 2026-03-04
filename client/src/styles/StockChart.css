@@ -12,14 +12,15 @@
 .stockChartActions{
     width: 30%;
 }
+
 .stockChartActions-head{
     display: flex;
     width: 100%;
     justify-content: center;
     gap: 4%;
     margin-top: 8vh;
-
 }
+
 .stockChartActions-head .button-active{
     background-color: #394b9d;
     border: 1px solid #394b9d;
@@ -30,6 +31,7 @@
     font-weight: 500;
     border-radius: 0.6rem;
 }
+
 .stockChartActions-head .button-inactive{
     background-color: #fff;
     border: 1px solid #394b9d;
@@ -41,9 +43,7 @@
     border-radius: 0.6rem;
 }
 
-
 .stockChartActions-body{
-
     width: 70%;
     margin-left: 15%;
     margin-top: 5vh;
@@ -53,29 +53,88 @@
     border-radius: 0.8rem;
 }
 
-.stockChartActions-body form{
-
-
-}
-
 .stockChartActions-body form label{
-
     color: #222c56d2;
 }
 
 .stockChartActions-body form input{
-
     color: #333a54b9;
 }
 
 .stockChartActions-body form select{
-
     color: #333a54b9;
-    
 }
 
 .stockChartActions-body form p{
-
     font-size: 0.7rem;
     color: #5a6492a8;
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+    .stockPage {
+        flex-direction: column;
+        padding-top: 12vh;
+        align-items: center;
+    }
+
+    .stockChart {
+        width: 95%;
+        height: 50vh;
+        margin-left: 0;
+    }
+
+    .stockChartActions {
+        width: 90%;
+        margin-top: 2vh;
+    }
+
+    .stockChartActions-head {
+        margin-top: 2vh;
+        justify-content: flex-start;
+        gap: 10px;
+    }
+
+    .stockChartActions-head .button-active,
+    .stockChartActions-head .button-inactive {
+        width: auto;
+        padding: 10px 20px;
+    }
+
+    .stockChartActions-body {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 2vh;
+    }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    .stockPage {
+        padding-top: 15vh;
+    }
+
+    .stockChart {
+        width: 100%;
+        height: 40vh;
+    }
+
+    .stockChartActions {
+        width: 92%;
+    }
+
+    .stockChartActions-head {
+        gap: 8px;
+        flex-wrap: wrap;
+    }
+
+    .stockChartActions-head .button-active,
+    .stockChartActions-head .button-inactive {
+        padding: 8px 14px;
+        font-size: 0.75rem;
+    }
+
+    .stockChartActions-body {
+        padding: 2vh 4vw;
+    }
 }

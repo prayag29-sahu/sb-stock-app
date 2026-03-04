@@ -9,6 +9,7 @@
     margin-left: 5%;
     border-radius: 0.6rem;
 }
+
 .user-portfolio-container-head{
     display: flex;
     align-items: center;
@@ -22,7 +23,6 @@
     font-size: 2.5rem;
     color: rgba(29, 65, 123, 0.925);
 }
-
 
 .user-portfolio-container-search input{
     width: 20vw;
@@ -43,19 +43,18 @@
 }
 
 .user-portfolio{
-
     height: 70vh;
     margin-top: 3vh;
     display: flex;
     flex-direction: column;
     gap: 10px;
     overflow-y: scroll;
-    -ms-overflow-style: none; 
-    scrollbar-width: none; 
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 }
 .user-portfolio::-webkit-scrollbar {
     display: none;
-  }
+}
 
 .user-portfolio-stock{
     display: flex;
@@ -95,4 +94,65 @@
 .user-portfolio-stock span p{
     margin: 0;
     font-size: 0.9rem;
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+    .user-portfolio-container {
+        width: 95%;
+        margin-left: 2.5%;
+    }
+
+    .user-portfolio-container-head h2 {
+        font-size: 1.8rem;
+    }
+
+    .user-portfolio-container-search input {
+        width: 35vw;
+    }
+
+    .user-portfolio-stock {
+        margin: 0 1rem;
+        padding: 0.8rem 1rem;
+    }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    .portfolioPage {
+        padding-top: 15vh;
+    }
+
+    .user-portfolio-container {
+        width: 100%;
+        margin-left: 0;
+        height: auto;
+    }
+
+    .user-portfolio-container-head {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        padding: 2vh 4vw;
+    }
+
+    .user-portfolio-container-head h2 {
+        font-size: 1.5rem;
+    }
+
+    .user-portfolio-container-search input {
+        width: 65vw;
+    }
+
+    .user-portfolio {
+        height: 60vh;
+        margin-top: 2vh;
+    }
+
+    .user-portfolio-stock {
+        margin: 0 0.5rem;
+        padding: 0.7rem 0.8rem;
+        flex-wrap: wrap;
+        gap: 6px;
+    }
 }
