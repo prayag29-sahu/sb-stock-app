@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import React, { useEffect, useState } from 'react'
 import '../styles/AllTransactions.css'
 import axiosInstance from '../components/axiosInstance';
